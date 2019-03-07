@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
+import { DisplayProductsComponent } from './display-products/display-products.component';
+import { ProductsService } from './products.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -19,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     AboutComponent,
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    DisplayProductsComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -27,8 +31,9 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
