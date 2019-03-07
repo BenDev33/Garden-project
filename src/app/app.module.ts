@@ -8,7 +8,9 @@ import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AlertService, AuthenticationService, UserService} from './_services';
-
+import { DisplayProductsComponent } from './display-products/display-products.component';
+import { ProductsService } from './products.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent  },
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AboutComponent,
     ProductsComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    DisplayProductsComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -35,11 +38,13 @@ const appRoutes: Routes = [
     RouterModule,
     ReactiveFormsModule,
     FormsModule
+    HttpClientModule
   ],
   providers: [
     AlertService,
     AuthenticationService,
     UserService,
+    ProductsService,
 ],
   bootstrap: [AppComponent]
 })
