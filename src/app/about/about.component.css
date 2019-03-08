@@ -1,0 +1,38 @@
+body {
+    background-color: lightgrey;
+}
+
+p {
+    text-align: center;
+}
+
+.paragraph {
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2em;
+    background-color: lightskyblue;
+}
+
+label {
+    text-align: center;
+}
+
+#contact label {
+    margin-right: 500px;
+}
+
+.control-group  {
+    margin-left: 0px;
+}
+
+.form-group {
+    margin-left: 15em;
+}
+
+button {
+    margin-left: 13em;
+
+    background-color: lightskyblue;
+}
