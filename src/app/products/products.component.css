@@ -6,7 +6,10 @@
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30vw;
+    /* height: 70vh; */
     text-align: center;
+    background-color: lightskyblue;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -15,4 +18,8 @@
 
 .cardContainer {
     padding: 1em 2em;
+}
+
+.body {
+    background-color:lightgrey;
 }
